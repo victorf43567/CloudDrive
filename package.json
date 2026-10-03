@@ -1,0 +1,25 @@
+{
+  "name": "clouddrive",
+  "version": "1.0.0",
+  "description": "A complete, modern cloud storage application for Windows",
+  "private": true,
+  "workspaces": [
+    "apps/desktop",
+    "apps/server",
+    "packages/shared",
+    "packages/database",
+    "packages/types"
+  ],
+  "scripts": {
+    "install:all": "yarn install",
+    "build": "yarn workspaces run build",
+    "dev": "yarn workspaces run dev",
+    "test": "yarn workspaces run test",
+    "typecheck": "yarn workspaces run typecheck",
+    "lint": "yarn workspaces run lint"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}
